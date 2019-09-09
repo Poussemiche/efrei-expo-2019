@@ -20,8 +20,8 @@ type Item{
     id: ID!
     title: String!
     categories: [String!]!
-    price: Int
-    photos: [String!]!
+    price: Int!
+    photos: [String]!
 }
 
 input EditItemInput{

@@ -1,4 +1,5 @@
 import Expo from "expo-server-sdk";
+import items from '~/data/items';
 
 let expo = new Expo;
 
@@ -31,8 +32,8 @@ const resolvers = {
                 photos: data.photos || items[index].photos
             }
             return items.find((item) => item.id === args.id)
-        }
-    },
+        },
+    },      
 }
 
 export default resolvers;
