@@ -1,0 +1,19 @@
+{
+  "name": "bon-angle-server",
+  "version": "1.0.0",
+  "description": "Le Bon Angle est une application d’achat et vente de produits entre particuliers. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poussemiche/efrei-expo-2019.git"
+  },
+  "author": "st2diio, poussemiche, phim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poussemiche/efrei-expo-2019/issues"
+  },
+  "homepage": "https://github.com/Poussemiche/efrei-expo-2019#readme"
+}
