@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
+import List from './../List/index';
+import NavBar from './../NavBar';
 
-export default class Login extends Component{
-    constructor(props){
-        super(props)
-    }
-
+export default class Main extends Component{
+    
     render(){
 
         return(
             <View>
-                test
+            <NavBar/>
+            <List/>
             </View>
         )
     }

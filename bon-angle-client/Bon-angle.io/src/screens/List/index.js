@@ -8,12 +8,13 @@ export default class List extends Component{
         super(props);
     }
 
+
     render(){
 
         return(
-            <View style={{flex:1, flexDirection:'row'}}>
+            <View style={{flexDirection:'row',justifyContent: 'space-around',flexWrap: 'wrap',}}>
                 {items.map((m,i) => (
-                    <Product data = {m}/>
+                    <Product data = {m} key = {i}/>
                 ))}
             </View>
         )
