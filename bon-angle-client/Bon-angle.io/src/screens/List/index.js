@@ -11,7 +11,7 @@ export default class List extends Component{
     render(){
 
         return(
-            <View>
+            <View style={{flex:1, flexDirection:'row'}}>
                 {items.map((m,i) => (
                     <Product data = {m}/>
                 ))}
