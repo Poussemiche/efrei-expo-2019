@@ -1,8 +1,10 @@
 import { GraphQLServer } from 'graphql-yoga'
 import schema from './schema'
+import db from './models';
 
 const server = new GraphQLServer({
     schema,
+    context: { db },
 })
 
 const PORT = 4000;

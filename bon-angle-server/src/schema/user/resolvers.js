@@ -20,6 +20,13 @@ const resolvers = {
     }, 
 
     Mutation: {
+        createUser: (obj, {fistName, lastName, city}, {db}, info)=>{
+            db.user.create({
+                firstName: fistName,
+                lastName: lastName,
+                city: city
+            })
+        },
         editUser: (obj, args, ctx, info) => {
             const { data } = args
             const index = users.indexOf((user)=> user.id === args.id);
@@ -59,6 +66,14 @@ const resolvers = {
                 }
             }
             return { success }
+        }, 
+
+        deleteUser: (obj, {id}, {db}, info) =>{
+            db.user.destroy({
+                where:{
+                    id: id
+                }
+            })
         }
     }
 }

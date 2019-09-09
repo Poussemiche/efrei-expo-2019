@@ -11,7 +11,9 @@ type Query{
 }
 
 type Mutation{
+    createUser(firstName: String!, lastName: String!, city: String!): User!
     editUser(id: ID!, data: EditUserInput!): User!
+    deleteUser(id: ID!): ID!
     storeUserExpoToken(token: String!): StoreUserExpoTokenResponse!
     sendNotification(token: String!): StoreUserExpoTokenResponse!
 }

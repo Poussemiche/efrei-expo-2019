@@ -1,7 +1,6 @@
 import Expo from "expo-server-sdk";
 import items from '~/data/items';
-
-let expo = new Expo;
+//import db from '~/src/models'
 
 const resolvers = {
     Query: {
@@ -21,6 +20,14 @@ const resolvers = {
     },
 
     Mutation: {
+        createItem: (obj,{title, categories, price, photos}, {db}, info ) => {
+            db.item.create({
+                title: title,
+                categories: categories,
+                price: price,
+                photos: photos
+            })
+        },
         editItem: (obj, args, ctx, info) => {
             const {data} = args;
             const index = items.indexOf((item) => item.id === args.id);
@@ -33,7 +40,18 @@ const resolvers = {
             }
             return items.find((item) => item.id === args.id)
         },
-    },      
+        deleteItem: (obj, {id}, {db}, info) =>{
+            db.user.destroy({
+                where:{
+                    id: id
+                }
+            })
+        }
+    },
+    
+    Item: {
+
+    }
 }
 
 export default resolvers;

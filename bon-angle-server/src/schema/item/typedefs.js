@@ -11,7 +11,9 @@ type Query{
 }
 
 type Mutation{
+    createItem(title: String!, catergories: [String]!, price: Int!, photos: [String]!): Item!
     editItem(id: ID!, data: EditItemInput!): Item!
+    deleteItem(id: ID!): Int!
 }
 
 #######
