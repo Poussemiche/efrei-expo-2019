@@ -12,7 +12,13 @@ export default class Product extends Component{
     render(){
 
         return(
-            <View style={{height:50, backgroundColor:'#d1cdcd'}}>
+            <View style={{flexDirection:'row',justifyContent: 'space-around',flexWrap: 'wrap',height:50, backgroundColor:'#d1cdcd'}}>
+                <View>
+                <Text style={{paddingTop:15}}>Trier</Text>
+                </View>
+                <View>
+                <Text style={{paddingTop:15}}>Filtrer</Text>
+                </View>
             </View>
         )
     }
