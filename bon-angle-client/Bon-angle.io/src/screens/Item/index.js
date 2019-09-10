@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, Image } from "react-native";
+import { Text, View, Image,Button } from "react-native";
 import items from './../List/items';
 
 export default class Item extends Component{
@@ -19,6 +19,9 @@ export default class Item extends Component{
                 <Text>Tags: {item.categories.map((m,i) => (
                     <Text key = {i}> {m}</Text>
                 ))}</Text>
+                <View style={{backgroundColor:'green',margin:10}}>
+                <Button title="Acheter" color="white"/>
+                </View>
             </View>
         )
     }

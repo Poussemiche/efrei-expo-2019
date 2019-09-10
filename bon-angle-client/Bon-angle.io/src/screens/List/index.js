@@ -10,9 +10,17 @@ export default class List extends Component{
 
 
     render(){
+        let items_filtered = [];
+        if(this.props.filtre == null){
+            items_filtered = items;
+            console.log('ok')
+        }else{
+            items_filtered = items.filter(item => item.title.toUpperCase().includes(this.props.filtre.toUpperCase()))
+        }
+        
         return(
-            <View style={{flexDirection:'row',justifyContent: 'space-around',flexWrap: 'wrap',}}>
-                {items.map((m,i) => (
+            <View style={{flexDirection:'row',justifyContent: 'space-around',flexWrap: 'wrap'}}>
+                {items_filtered.map((m,i) => (
                     <Product data = {m} key = {i}/>
                 ))}
             </View>

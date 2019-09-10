@@ -5,12 +5,27 @@ import Filter from './../NavBar/Filter';
 
 export default class Main extends Component{
     
+    constructor(props){
+        super(props)
+        this.state={
+            filter:''
+        }
+    }
+
+    set_filter(filtre){
+        if(!filtre){
+            filtre = '';
+        }
+        this.setState({filter: filtre});
+        console.log(this.state.filter)
+    }
+
     render(){
 
         return(
             <View>
-            <Filter/>
-            <List/>
+            <Filter filtrer = {this.set_filter.bind(this)}/>
+            <List filtre = {this.state.filter}/>
             </View>
         )
     }
