@@ -1,35 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/screens/Login';
-import List from './src/screens/List';
-import Main from './src/screens/Main';
-import NavBar from './src/screens/NavBar';
-import Item from './src/screens/Item';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import React, { useEffect } from 'react';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
+import RootNavigator from './src/navigator';
 
-const AppNavigator = createStackNavigator({
-  Login: {
-    screen: Login,
-  },
-  List: {
-    screen: List,
-  },
-  Main: {
-    screen: Main,
-  },
-  NavBar: {
-    screen: NavBar,
-  }
-  ,
-  Item: {
-    screen: Item,
-  }
-}, {
-    initialRouteName: 'Main',
-  }
-  );
+const client = new ApolloClient({
+  uri: 'http://localhost:4000/',
+})
 
-const AppContainer = createAppContainer(AppNavigator);
+const App = () => (
+<ApolloProvider client={client}>
+    <RootNavigator />
+  </ApolloProvider>
+)
 
-export default AppContainer;
+export default App;

@@ -10,7 +10,6 @@ export default class List extends Component{
 
 
     render(){
-
         return(
             <View style={{flexDirection:'row',justifyContent: 'space-around',flexWrap: 'wrap',}}>
                 {items.map((m,i) => (
