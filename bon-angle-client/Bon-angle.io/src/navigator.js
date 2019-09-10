@@ -5,6 +5,7 @@ import List from './screens/List';
 import Main from './screens/Main';
 import Item from './screens/Item';
 import User from './screens/User';
+import EditItem from './screens/User/EditItem';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -22,6 +23,9 @@ const HomeStack = createStackNavigator({
     },
     Item: {
       screen: Item,
+    },
+    EditItem: {
+      screen: EditItem,
     }
   }, {
       initialRouteName: 'Main',

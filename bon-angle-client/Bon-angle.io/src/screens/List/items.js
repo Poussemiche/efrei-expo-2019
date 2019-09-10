@@ -22,7 +22,7 @@ export default items = [
     ,
     {
       id: 3,
-      title: "Air Force 1",
+      title: "Air Force 3",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/001228144_101.png'),
@@ -32,7 +32,7 @@ export default items = [
     ,
     {
       id: 4,
-      title: "Air Force 1",
+      title: "Air Force 4",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/823279.jpg'),
@@ -42,7 +42,7 @@ export default items = [
     ,
     {
       id: 5,
-      title: "Air Force 1",
+      title: "Air Force 5",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/836998.jpg'),
@@ -52,7 +52,7 @@ export default items = [
     ,
     {
       id: 6,
-      title: "Air Force 1",
+      title: "Air Force 6",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/844079.jpg'),
@@ -62,7 +62,7 @@ export default items = [
     ,
     {
       id: 7,
-      title: "Air Force 1",
+      title: "Air Force 7",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/857397.jpg'),
@@ -72,7 +72,7 @@ export default items = [
     ,
     {
       id: 8,
-      title: "Air Force 1",
+      title: "Air Force 8",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/884567.jpg'),

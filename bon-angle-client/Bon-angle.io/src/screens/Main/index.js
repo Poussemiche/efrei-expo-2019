@@ -18,11 +18,8 @@ export default class Main extends Component{
     }
 
     set_filter(filtre){
-        if(!filtre){
-            filtre = '';
-        }
+        console.log(filtre)
         this.setState({filter: filtre});
-        console.log(this.state.filter)
     }
 
     render(){
@@ -36,5 +33,5 @@ export default class Main extends Component{
     }
 }
 Main.navigationOptions = {
-    title: 'Home'
+    title: `What's to buy`
   }
