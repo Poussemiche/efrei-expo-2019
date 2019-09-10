@@ -7,7 +7,7 @@ export default items = [
       price: 15,
       photo: require('./../../../assets/866190.jpg'),
       photos:[],
-      id_user:1
+      id_user:'d2bb534c-da3a-4cc1-800c-cb7aa77d210b'
     }
     ,
     {
@@ -17,7 +17,7 @@ export default items = [
       price: 30,
       photo:require('./../../../assets/867159.jpg'),
       photos:[],
-      id_user:1
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
     }
     ,
     {
@@ -27,6 +27,56 @@ export default items = [
       price: 30,
       photo:require('./../../../assets/001228144_101.png'),
       photos:[],
-      id_user:2
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
+    }
+    ,
+    {
+      id: 4,
+      title: "Air Force 1",
+      categories: ["jeans"],  
+      price: 30,
+      photo:require('./../../../assets/823279.jpg'),
+      photos:[],
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
+    }
+    ,
+    {
+      id: 5,
+      title: "Air Force 1",
+      categories: ["jeans"],  
+      price: 30,
+      photo:require('./../../../assets/836998.jpg'),
+      photos:[],
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
+    }
+    ,
+    {
+      id: 6,
+      title: "Air Force 1",
+      categories: ["jeans"],  
+      price: 30,
+      photo:require('./../../../assets/844079.jpg'),
+      photos:[],
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
+    }
+    ,
+    {
+      id: 7,
+      title: "Air Force 1",
+      categories: ["jeans"],  
+      price: 30,
+      photo:require('./../../../assets/857397.jpg'),
+      photos:[],
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
+    }
+    ,
+    {
+      id: 8,
+      title: "Air Force 1",
+      categories: ["jeans"],  
+      price: 30,
+      photo:require('./../../../assets/884567.jpg'),
+      photos:[],
+      id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
     }
   ]

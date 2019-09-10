@@ -8,8 +8,13 @@ export default class Main extends Component{
     constructor(props){
         super(props)
         this.state={
-            filter:''
+            filter:'',
+            user_id:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
         }
+    }
+
+    componentDidMount(){
+        
     }
 
     set_filter(filtre){
@@ -30,3 +35,6 @@ export default class Main extends Component{
         )
     }
 }
+Main.navigationOptions = {
+    title: 'Home'
+  }

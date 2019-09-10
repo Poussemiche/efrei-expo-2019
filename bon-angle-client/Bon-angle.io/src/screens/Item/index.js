@@ -20,7 +20,7 @@ export default class Item extends Component{
                     <Text key = {i}> {m}</Text>
                 ))}</Text>
                 <View style={{backgroundColor:'green',margin:10}}>
-                <Button title="Acheter" color="white"/>
+                <Button title="Buy" color="white"/>
                 </View>
             </View>
         )
