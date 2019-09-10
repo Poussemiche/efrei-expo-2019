@@ -3,8 +3,8 @@ export default items = [
     {
       id: 1,
       title: "Grey Hoodie",
-      categories: ["white","tee","toto"],
-      price: 15,
+      categories: "Hoodie Grey ",
+      price: 25,
       photo: require('./../../../assets/866190.jpg'),
       photos:[],
       id_user:'d2bb534c-da3a-4cc1-800c-cb7aa77d210b'
@@ -13,7 +13,7 @@ export default items = [
     {
       id: 2,
       title: "Black Hoodie",
-      categories: ["jeans"],
+      categories: "Hoodie Black",
       price: 30,
       photo:require('./../../../assets/867159.jpg'),
       photos:[],
@@ -22,9 +22,9 @@ export default items = [
     ,
     {
       id: 3,
-      title: "Air Force 3",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Air Force 1",
+      categories: "Force Air 1 Nike",  
+      price: 90,
       photo:require('./../../../assets/001228144_101.png'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
@@ -32,9 +32,9 @@ export default items = [
     ,
     {
       id: 4,
-      title: "Air Force 4",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Black Sweat",
+      categories: "Black Sweat",  
+      price: 20,
       photo:require('./../../../assets/823279.jpg'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
@@ -42,9 +42,9 @@ export default items = [
     ,
     {
       id: 5,
-      title: "Air Force 5",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Black Hat",
+      categories: "Black Hat",  
+      price: 15,
       photo:require('./../../../assets/836998.jpg'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
@@ -52,9 +52,9 @@ export default items = [
     ,
     {
       id: 6,
-      title: "Air Force 6",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Sacoche",
+      categories: "Sacoche",  
+      price: 23,
       photo:require('./../../../assets/844079.jpg'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
@@ -62,9 +62,9 @@ export default items = [
     ,
     {
       id: 7,
-      title: "Air Force 7",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Brown jacket",
+      categories: "Brown jacket",  
+      price: 60,
       photo:require('./../../../assets/857397.jpg'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'
@@ -72,9 +72,9 @@ export default items = [
     ,
     {
       id: 8,
-      title: "Air Force 8",
-      categories: ["jeans"],  
-      price: 30,
+      title: "Black cap",
+      categories: "Black cap",  
+      price: 10,
       photo:require('./../../../assets/884567.jpg'),
       photos:[],
       id_user:'2daf302b-ecb1-4704-9d87-fdeb4c7abd9c'

@@ -19,10 +19,11 @@ class EditItem extends Component{
         const screenHeight = Math.round(Dimensions.get('window').height);
         return( 
             <View style={{marginTop:10,flex: 1,textAlign:'center'}}>
-                <Image style={{ width: screenWidth/3, height: screenHeight/6 }} source = {this.props.data.photo}></Image>       
+                {/* <Image style={{ width: screenWidth/3, height: screenHeight/6 }} source = {this.props.data.photo}></Image>       
                 <Text style={{marginTop:5}}>{this.props.data.title}</Text>
                 <Text style={{marginTop:5}}>$ {this.props.data.price}</Text>
-                <Text style={{marginTop:5}}>$ {this.props.data.categories}</Text>
+                <Text style={{marginTop:5}}>$ {this.props.data.categories}</Text> */}
+                <Text>{this.props.data}</Text>
                 
             </View>
         )

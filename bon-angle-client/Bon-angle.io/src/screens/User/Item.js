@@ -15,8 +15,8 @@ class Item extends Component{
     }
 
     edit(){
-        const { navigate } = this.props.navigation;
-        navigate('EditItem', {data:this.props.data});
+        const { navigate } = this.props.navigation; //decommenter pour naviguer vers edit
+        navigate('EditItem', {data : this.props.data});
     }
 
     delete(id){
@@ -31,6 +31,7 @@ class Item extends Component{
     }
     
     render(){
+        console.log(this.props.data)
         const screenWidth = Math.round(Dimensions.get('window').width);
         const screenHeight = Math.round(Dimensions.get('window').height);
         return( 

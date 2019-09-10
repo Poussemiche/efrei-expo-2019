@@ -20,7 +20,7 @@ export default class List extends Component{
         if(this.props.filtre == null){
             items_filtered = items;
         }else{
-            items_filtered = items.filter(item => item.title.toUpperCase().includes(this.props.filtre.toUpperCase()))
+            items_filtered = items.filter(item => item.categories.toUpperCase().includes(this.props.filtre.toUpperCase()))
         }
         return(
             <ScrollView>
