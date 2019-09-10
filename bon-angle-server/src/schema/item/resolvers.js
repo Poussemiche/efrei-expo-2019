@@ -1,6 +1,6 @@
 import Expo from "expo-server-sdk";
 import items from '~/data/items';
-//import db from '~/src/models'
+import uuid from 'uuid/v1';
 
 const resolvers = {
     Query: {
@@ -20,13 +20,25 @@ const resolvers = {
     },
 
     Mutation: {
-        createItem: (obj,{title, categories, price, photos}, {db}, info ) => {
-            db.item.create({
-                title: title,
-                categories: categories,
-                price: price,
-                photos: photos
-            })
+        // createItem: (obj,{title, categories, price, photos}, {db}, info ) => {
+        //     db.item.create({
+        //         title: title,
+        //         categories: categories,
+        //         price: price,
+        //         photos: photos
+        //     })
+        // },
+        createItem: (obj,args, ctx, info ) => {
+            const {data} = args;
+            let item = {
+                id: uuidv1(),
+                title: data.title,
+                categories: data.categories,
+                price: data.price,
+                photos: data.photos
+            }
+            items.push(item);
+            return items.find((i)=> i.id === item.id)
         },
         editItem: (obj, args, ctx, info) => {
             const {data} = args;
@@ -41,11 +53,11 @@ const resolvers = {
             return items.find((item) => item.id === args.id)
         },
         deleteItem: (obj, {id}, {db}, info) =>{
-            db.user.destroy({
-                where:{
-                    id: id
-                }
-            })
+            // db.user.destroy({
+            //     where:{
+            //         id: id
+            //     }
+            // })
         }
     },
     

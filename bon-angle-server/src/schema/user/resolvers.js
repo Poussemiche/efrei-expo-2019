@@ -1,5 +1,7 @@
 import Expo from "expo-server-sdk";
 import users from '~/data/users'
+import uuid from 'uuid/v1';
+
 let expo = new Expo;
 
 const resolvers = {
@@ -20,12 +22,23 @@ const resolvers = {
     }, 
 
     Mutation: {
-        createUser: (obj, {fistName, lastName, city}, {db}, info)=>{
-            db.user.create({
+        // createUser: (obj, {fistName, lastName, city}, {db}, info)=>{
+        //     db.user.create({
+        //         firstName: fistName,
+        //         lastName: lastName,
+        //         city: city
+        //     })
+        // },
+        createUser: (obj, args, ctx, info)=>{
+            const {data} = args
+            let user = {
+                id: uuidv1(),
                 firstName: fistName,
                 lastName: lastName,
                 city: city
-            })
+            }
+            users.push(user)
+            return users.find((u) => u.id === user.id);
         },
         editUser: (obj, args, ctx, info) => {
             const { data } = args
