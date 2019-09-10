@@ -2,8 +2,8 @@
 export default items = [
     {
       id: 1,
-      title: "White tee",
-      categories: ["white","tee"],
+      title: "Grey Hoodie",
+      categories: ["white","tee","toto"],
       price: 15,
       photo: require('./../../../assets/866190.jpg'),
       photos:[],
@@ -12,7 +12,7 @@ export default items = [
     ,
     {
       id: 2,
-      title: "Jeans",
+      title: "Black Hoodie",
       categories: ["jeans"],
       price: 30,
       photo:require('./../../../assets/867159.jpg'),
@@ -22,7 +22,7 @@ export default items = [
     ,
     {
       id: 3,
-      title: "Jeans",
+      title: "Air Force 1",
       categories: ["jeans"],  
       price: 30,
       photo:require('./../../../assets/001228144_101.png'),

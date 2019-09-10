@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Text, View } from "react-native";
 import List from './../List/index';
 import NavBar from './../NavBar';
+import Filter from './../NavBar/Filter';
 
 export default class Main extends Component{
     
@@ -10,6 +11,7 @@ export default class Main extends Component{
         return(
             <View>
             <NavBar/>
+            <Filter/>
             <List/>
             </View>
         )

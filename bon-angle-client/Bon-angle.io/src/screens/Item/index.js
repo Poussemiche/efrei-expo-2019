@@ -15,7 +15,12 @@ export default class Item extends Component{
         return(
             <View>
             <NavBar/>
+                <Image style={{ width: '100%', height: 400 }} source = {item.photo}/>
                 <Text>{item.title}</Text>
+                <Text>{item.price} $</Text>
+                <Text>Tags: {item.categories.map((m,i) => (
+                    <Text key = {i}> {m}</Text>
+                ))}</Text>
             </View>
         )
     }
