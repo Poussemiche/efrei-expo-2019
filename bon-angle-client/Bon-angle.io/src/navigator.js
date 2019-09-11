@@ -4,28 +4,32 @@ import Login from './screens/Login';
 import List from './screens/List';
 import Main from './screens/Main';
 import Item from './screens/Item';
+import Register from './screens/Register';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 
 const AppNavigator = createStackNavigator({
-    Login: {
-      screen: Login,
-    },
-    List: {
-      screen: List,
-    },
-    Main: {
-      screen: Main,
-    },
-    Item: {
-      screen: Item,
-    }
-  }, {
-      initialRouteName: 'Main',
-    }
-    );
-  
-  const AppContainer = createAppContainer(AppNavigator);
-  
-  export default AppContainer;
+  Login: {
+    screen: Login,
+  },
+  List: {
+    screen: List,
+  },
+  Main: {
+    screen: Main,
+  },
+  Item: {
+    screen: Item,
+  },
+  Register: {
+    screen: Register,
+  }
+}, {
+    initialRouteName: 'Login',
+  }
+);
+
+const AppContainer = createAppContainer(AppNavigator);
+
+export default AppContainer;
