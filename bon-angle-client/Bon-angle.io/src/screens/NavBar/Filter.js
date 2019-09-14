@@ -19,6 +19,16 @@ export default class Product extends Component {
         }
     }
 
+    _applyfilter(){
+        this.setState({ filter_display: false });
+        this.props.filtrer(this.state.text ? this.state.text : '');
+    }
+
+    _resetfilter(){
+        this.setState({ filter_display: false });
+        this.props.filtrer('');
+    }
+
     render() {
 
         return (
@@ -39,10 +49,15 @@ export default class Product extends Component {
                 {this.state.filter_display &&
                     <View><TextInput style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
                         onChangeText={(text) => this.setState({ text })}
-                    />
-                        <Button title='Filtrer'
-                            onPress={() => this.props.filtrer(this.state.text ? this.state.text : '')}
-                        /></View>
+                        placeholder='What tags are you looking for ?'
+                    />  
+                        <Button title='Filter'
+                            onPress={() => this._applyfilter()}
+                        />
+                        <Button title='Reset Filter'
+                            onPress={() => this._resetfilter()}
+                        />
+                </View>
                 }
             </View>
         )
