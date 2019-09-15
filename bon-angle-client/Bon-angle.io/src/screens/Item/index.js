@@ -18,9 +18,9 @@ export default class Item extends Component{
                 <Image style={{ width: '100%', height: screenHeight/1.5 }} source = {item.photo}/>
                 <Text>{item.title}</Text>
                 <Text>{item.price} $</Text>
-                <Text>Tags: {item.categories.map((m,i) => (
+                {/* <Text>Tags: {item.categories.map((m,i) => (
                     <Text key = {i}> {m}</Text>
-                ))}</Text>
+                ))}</Text> */}
                 <View style={{backgroundColor:'green',margin:10}}>
                 <Button title="Buy" color="white"/>
                 </View>
