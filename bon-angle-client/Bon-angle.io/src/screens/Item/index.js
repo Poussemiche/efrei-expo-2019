@@ -16,8 +16,8 @@ export default class Item extends Component{
         return(
             <View>
                 <Image style={{ width: '100%', height: screenHeight/1.5 }} source = {item.photo}/>
-                <Text>{item.title}</Text>
-                <Text>{item.price} $</Text>
+                <Text style={{textAlign:'center'}}>{item.title}</Text>
+                <Text style={{textAlign:'center'}}>{item.price} $</Text>
                 {/* <Text>Tags: {item.categories.map((m,i) => (
                     <Text key = {i}> {m}</Text>
                 ))}</Text> */}
