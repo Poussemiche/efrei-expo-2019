@@ -23,8 +23,8 @@ export default class User extends Component{
         this.setState({items:products})
     }
 
-    add(){
-
+    add(products){
+        this.setState({items:products})
     }
 
     render(){

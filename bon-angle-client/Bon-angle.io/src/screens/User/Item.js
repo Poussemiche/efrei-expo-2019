@@ -15,8 +15,10 @@ class Item extends Component{
     }
 
     edit(){
-        //const { navigate } = this.props.navigation; //decommenter pour naviguer vers edit
-        //navigate('EditItem', {data : this.props.data});
+        // const { navigate } = this.props.navigation; //decommenter pour naviguer vers edit
+        // navigate('EditItem', {data : this.props.data});
+        // console.log(this.props.data);
+        
     }
 
     delete(id){
