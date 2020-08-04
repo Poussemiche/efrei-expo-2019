@@ -6,5 +6,5 @@ Le Bon Angle est une application d’achat et vente de produits entre particulie
 ```
 Thomas Phimanesone
 Steeve Randriamampianina
-Gabriel Roger de Campagnolle
+
 ```
